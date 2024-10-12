@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.box {
+    background-color: red;
+}
+
+@media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(6, 200px);
+}
